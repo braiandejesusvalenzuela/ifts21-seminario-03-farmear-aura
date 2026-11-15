@@ -2,7 +2,7 @@
 
 # FARMEAR AURA — Escape Room (Buenos Aires)
 
-**Sitio web Full Stack para un centro de Escape Rooms: interfaz SPA en el frontend, API REST con FastAPI y base de datos relacional MySQL.**
+**Sitio web Full Stack para un centro de Escape Rooms: interfaz SPA en el frontend, API REST con FastAPI y base de datos relacional MySQL**
 **
 
 <br />
