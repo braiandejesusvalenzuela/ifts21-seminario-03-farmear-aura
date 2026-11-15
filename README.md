@@ -2,7 +2,7 @@
 
 # FARMEAR AURA — Escape Room (Buenos Aires)
 
-**Sitio web Full Stack para un centro de Escape Rooms: interfaz SPA en el frontend, API REST con FastAPI y base de datos relacional MySQL.**
+**Aplicación web Full Stack para un centro de Escape Rooms: SPA en el frontend, API REST con FastAPI y base de datos relacional MySQL.**
 
 <br />
 
@@ -12,15 +12,12 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Python](https://img.shields.io/badge/Python_3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Uvicorn](https://img.shields.io/badge/Uvicorn-ASGI-499848?style=for-the-badge)
+![Uvicorn](https://img.shields.io/badge/Uvicorn-ASGI-499848?style=for-the-badge&logo=gunicorn&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL_8.4-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
 
-<br />
-
-<img src="https://skillicons.dev/icons?i=html,css,bootstrap,js,python,fastapi,mysql,git,github,vscode" alt="Stack tecnológico" />
-
-<br />
 <br />
 
 *Trabajo práctico integral — Seminario de Actualización en Tecnología Web · **IFTS N.º 21***
@@ -67,21 +64,23 @@ El repositorio evolucionó desde un prototipo web estático hacia una aplicació
 
 Esta tabla refleja el contenido verificable de la rama `develop`.
 
+Referencia de estados: ![IMPLEMENTADO](https://img.shields.io/badge/IMPLEMENTADO-2ea44f?style=flat-square) ![PENDIENTE](https://img.shields.io/badge/PENDIENTE-f1c40f?style=flat-square)
+
 | Componente | Estado | Detalle |
 |---|---|---|
-| SPA `public/index.html` | `[IMPLEMENTADO]` | Navbar, hero, salas, precios, contacto, WhatsApp, footer. |
-| Estilos `.fa-*` + Bootstrap 5.3 | `[IMPLEMENTADO]` | `styles.css`, `login.css`, `registro.css`, `reserva.css`. |
-| Navegación activa con `IntersectionObserver` | `[IMPLEMENTADO]` | `assets/js/main.js`. |
-| Pestañas de tarifas | `[IMPLEMENTADO]` | Muestra y oculta tarjetas de precio desde `main.js`. |
-| Pop-up de reserva (`popover` + `iframe`) | `[IMPLEMENTADO]` | Carga `paginas/reserva.html`. |
-| Páginas de login, registro y reserva (interfaz y validación en cliente) | `[IMPLEMENTADO]` | `public/paginas/`. |
-| Servidor FastAPI + `StaticFiles` | `[IMPLEMENTADO]` | `main.py`. |
-| Endpoint `GET /api/salas` | `[IMPLEMENTADO]` | Consulta la tabla `salas` con PyMySQL. |
-| Esquema SQL y datos iniciales | `[IMPLEMENTADO]` | Script `.sql` (volcado de HeidiSQL, MySQL 8.4.3). |
-| Endpoints de reservas, clientes, consultas y autenticación | `[PENDIENTE]` | No existen routers para estos dominios. |
-| Envío de formularios a la API con `fetch()` | `[PENDIENTE]` | Los formularios hoy validan en el navegador y simulan el envío. |
-| Autenticación real (login y registro contra la BD) | `[PENDIENTE]` | No hay tabla de usuarios con credenciales ni endpoints de auth. |
-| Configuración por variables de entorno | `[PENDIENTE]` | `python-dotenv` está en las dependencias, pero la conexión usa valores fijos. |
+| SPA `public/index.html` | ![IMPLEMENTADO](https://img.shields.io/badge/IMPLEMENTADO-2ea44f?style=flat-square) | Navbar, hero, salas, precios, contacto, WhatsApp, footer. |
+| Estilos `.fa-*` + Bootstrap 5.3 | ![IMPLEMENTADO](https://img.shields.io/badge/IMPLEMENTADO-2ea44f?style=flat-square) | `styles.css`, `login.css`, `registro.css`, `reserva.css`. |
+| Navegación activa con `IntersectionObserver` | ![IMPLEMENTADO](https://img.shields.io/badge/IMPLEMENTADO-2ea44f?style=flat-square) | `assets/js/main.js`. |
+| Pestañas de tarifas | ![IMPLEMENTADO](https://img.shields.io/badge/IMPLEMENTADO-2ea44f?style=flat-square) | Muestra y oculta tarjetas de precio desde `main.js`. |
+| Pop-up de reserva (`popover` + `iframe`) | ![IMPLEMENTADO](https://img.shields.io/badge/IMPLEMENTADO-2ea44f?style=flat-square) | Carga `paginas/reserva.html`. |
+| Páginas de login, registro y reserva (interfaz y validación en cliente) | ![IMPLEMENTADO](https://img.shields.io/badge/IMPLEMENTADO-2ea44f?style=flat-square) | `public/paginas/`. |
+| Servidor FastAPI + `StaticFiles` | ![IMPLEMENTADO](https://img.shields.io/badge/IMPLEMENTADO-2ea44f?style=flat-square) | `main.py`. |
+| Endpoint `GET /api/salas` | ![IMPLEMENTADO](https://img.shields.io/badge/IMPLEMENTADO-2ea44f?style=flat-square) | Consulta la tabla `salas` con PyMySQL. |
+| Esquema SQL y datos iniciales | ![IMPLEMENTADO](https://img.shields.io/badge/IMPLEMENTADO-2ea44f?style=flat-square) | Script `.sql` (volcado de HeidiSQL, MySQL 8.4.3). |
+| Endpoints de reservas, clientes, consultas y autenticación | ![PENDIENTE](https://img.shields.io/badge/PENDIENTE-f1c40f?style=flat-square) | No existen routers para estos dominios. |
+| Envío de formularios a la API con `fetch()` | ![PENDIENTE](https://img.shields.io/badge/PENDIENTE-f1c40f?style=flat-square) | Los formularios hoy validan en el navegador y simulan el envío. |
+| Autenticación real (login y registro contra la BD) | ![PENDIENTE](https://img.shields.io/badge/PENDIENTE-f1c40f?style=flat-square) | No hay tabla de usuarios con credenciales ni endpoints de auth. |
+| Configuración por variables de entorno | ![PENDIENTE](https://img.shields.io/badge/PENDIENTE-f1c40f?style=flat-square) | `python-dotenv` está en las dependencias, pero la conexión usa valores fijos. |
 
 ---
 
@@ -135,7 +134,7 @@ flowchart LR
 
 ## 4. Frontend
 
-Directorio: `public/` — `[IMPLEMENTADO]`
+Directorio: `public/` — ![IMPLEMENTADO](https://img.shields.io/badge/IMPLEMENTADO-2ea44f?style=flat-square)
 
 ### 4.1 Páginas
 
@@ -215,7 +214,7 @@ Los envíos de login, registro, reserva y contacto **aún no llaman a la API**; 
 
 ## 5. Backend
 
-Archivos: `main.py` y `public/assets/fast_api/conexion.py` — `[IMPLEMENTADO]` (alcance parcial, ver sección 2).
+Archivos: `main.py` y `public/assets/fast_api/conexion.py` — ![IMPLEMENTADO](https://img.shields.io/badge/IMPLEMENTADO-2ea44f?style=flat-square) (alcance parcial, ver sección 2).
 
 ### 5.1 Dependencias (`requirements.txt`)
 
@@ -303,7 +302,7 @@ Ejemplo de respuesta:
 
 ## 6. Base de Datos
 
-Motor: MySQL 8.x (script generado con HeidiSQL 12.8 sobre MySQL 8.4.3). El script crea la base `farmear_aura` (`utf8mb4`), las tablas y los datos iniciales — `[IMPLEMENTADO]`.
+Motor: MySQL 8.x (script generado con HeidiSQL 12.8 sobre MySQL 8.4.3). El script crea la base `farmear_aura` (`utf8mb4`), las tablas y los datos iniciales — ![IMPLEMENTADO](https://img.shields.io/badge/IMPLEMENTADO-2ea44f?style=flat-square)
 
 ### 6.1 Diagrama entidad-relación
 
@@ -631,7 +630,7 @@ A la docente **Maria Victoria Cunill**, por la estructura base y la guía pedag�
 - [Google Fonts](https://fonts.google.com/): Cinzel y Raleway
 - [Unsplash](https://unsplash.com/): imágenes de ambientación
 - [FastAPI](https://fastapi.tiangolo.com/), [Uvicorn](https://www.uvicorn.org/) y [PyMySQL](https://pymysql.readthedocs.io/)
-- [Shields.io](https://shields.io/) y [Skill Icons](https://skillicons.dev/): badges e íconos tecnológicos
+- [Shields.io](https://shields.io/): badges tecnológicos y de estado
 
 ---
 
